@@ -1,0 +1,331 @@
+################################ Aula 1 ################################
+
+Na linguagem JS o ; é opcional
+Podemos usar "" ou '' só não podemos misturar "'
+console.log //escrever no terminal
+console.clear() // limpar a tela do terminal
+Dica: "" Textos '' Importações
+
+Nas estruturas de controle condicional e nos
+laços de repetições podemos omitir as chaves,
+porém só uma linha de código é vinculada
+Dica: Não omitir as chaves
+
+Variáveis na linguagem JS são dinamicamente tipadas e
+somente temos 3 tipos (string, number e boolean)
+Para declarar uma constante ou variável podemos usar:
+const, var e let
+var (obsoleto - não usar, pois pode gerar BUG no projeto)
+
+Strings:
+.replace(",",".") //substitui um caractere por outro
+
+Concatenação (unir texto com contúdo de variáveis)
++ (evitar o uso devido a tipagem dinâmica)
+`${}` (mais usado na linguagem JS)
+
+Numbers:
+Number (converte para o tipo numérico)
+Number.isInteger (verifica se um número é inteiro ou não inteiro)
+
+################################  Aula 02  ################################
+
+Operadores aritméticos
+ATENÇÃO a regra de precedência:
+1º - Parenteses
+2º - Soma
+3º - Subtração
+4º - Multiplicação
+5º - Divisão
+
+Compaadores:
+Observação importante:
+NÃO usar os comparadores == != (riscos devido a tipagem dinâmica)
+
+-------------------
+NPM (Node Package Manager)
+Gerenciador de pacotes node (pacotes com funcionalidades que podem ser adicionadas ao node)
+Para gerenciar (versão, atualizações etc.) os pacotes node, é necessário configurar o package.json
+
+json(JavaScript Object Notation)
+npm -version
+npm ls (listar pacotes instalados)
+npm r (remover um pacote)
+
+observação: os pacotes são instalados no projeto(raiz)
+
+Passo 1 - Criar o arquivo package.json
+npm init
+
+Repositório de pacotes:
+https://www.npmjs.com/
+
+Exercício:
+Criar no console JS um app para calcular a porcentagem, usando regra de 3, conforme modelo:
+10% de 200 = 20
+X      Y     valor
+
+regra de 3:
+
+  200   100%
+      X
+valor   10%
+
+valor * 100 = 200 x 10
+
+valor * 100 = 2000
+
+valor = 2000 / 100
+
+corta o zero
+
+valor = 20 / 1
+
+valor = 20
+
+-------------------
+
+valor * 100 = y * x
+
+valor = (x * y) / 100
+
+Variáveis:
+3 variáveis: x y valor
+
+Entrada:
+x , Y
+
+Processamento:
+valor = (x * y) / 100
+
+Saída:
+valor
+
+-------------------
+Funções:
+Função é um bloco de código reutilizável
+
+Função simples:
+function none() {}
+
+Função com retorno: 
+function nome() {
+  return
+}
+
+Funções anonimas:
+const nome = function() {
+
+}
+
+let nome = function() {
+
+}
+
+Funções em JS podem ser simplificadas
+
+--------------------------------------
+obs:
+typeof // verifica a tipagem
+tipos primitivos (str, num, booleans)
+
+################################  Aula 03  ################################
+
+Função é um bloco de código reutilizável
+
+Função Simples:
+function nome() {
+}
+
+Função com Retorno:
+function nome() {
+    return
+}
+
+Função Anônima:
+const nome = function() {
+
+}
+
+let nome = function() {
+    
+}
+
+Funções em JavaScript moderno podem ser simplificadas
+
+___________________________________________________________
+obs:
+typeof // Verifica a tipagem dinâmica
+primitivos (string, number, boolean)
+function
+object
+
+-------------------
+POO - Programalção Orientada a Objetos
+
+Pilares:
+
+- Abstração
+- Herança
+- Polimorfismo
+- Encapsulamento (Segurança)
+
+Atenção!
+toda classe modelo inicia com uma uma letra maiúscula
+
+IMPORTANTE!!!
+new -> indica a criação de um objeto
+this -> quando se refere a ele mesmo
+super -> indica o uso de atributos da classe pai
+polimorfismo é a mudança do comportamento de um método já existente
+*** Atenção O polimorfismo não cria outro método, apenas modifica o comportamento de um método existente. Obrigatório usar o mesmo nome do
+método da classe pai.
+
+DICA:
+class Classe {} //cria uma classe modelo
+- O nome da classe sempre deve começar com uma letra maiúscula
+- Classe (biologia)
+- objeto (new) (substantivo)
+- atributos (variáveis) (adjetivos)
+- ações(métodos/funções) (verbos)
+
+Encapsulamento
+1) proteger a variável criando um modificador privado (acesso exclusivo da classe ao qual pertence)
+2) criar uma função para obter o conteúdo da variável (get)
+3) criar uma função para gravar um dado na variável (set)
+
+No JavaScript usamos o _ antes da variável para encapsular
+
+################################  Aula 04  ################################
+
+-------------------
+POO - Programalção Orientada a Objetos
+
+Pilares:
+
+- Abstração
+- Herança
+- Polimorfismo
+- Encapsulamento (Segurança)
+
+Atenção!
+toda classe modelo inicia com uma uma letra maiúscula
+
+IMPORTANTE!!!
+new -> indica a criação de um objeto
+this -> quando se refere a ele mesmo
+super -> indica o uso de atributos da classe pai
+polimorfismo é a mudança do comportamento de um método já existente
+*** Atenção O polimorfismo não cria outro método, apenas modifica o comportamento de um método existente. Obrigatório usar o mesmo nome do
+método da classe pai.
+
+DICA:
+class Classe {} //cria uma classe modelo
+- O nome da classe sempre deve começar com uma letra maiúscula
+- Classe (biologia)
+- objeto (new) (substantivo)
+- atributos (variáveis) (adjetivos)
+- ações(métodos/funções) (verbos)
+
+Encapsulamento
+1) proteger a variável criando um modificador privado (acesso exclusivo da classe ao qual pertence)
+2) criar uma função para obter o conteúdo da variável (get)
+3) criar uma função para gravar um dado na variável (set)
+
+No JavaScript usamos o _ antes da variável para encapsular
+
+################################  Aula 05  ################################
+
+No JavaScript objetos podem ser criados sem uma classe modelo
+Estruturas de dados usando objetos
+Exemplos:
+- package.json
+-coleção do banco de dados (MongoDB)
+
+ATENÇÃO
+Tipos no JavaScript
+- string
+- number
+- boolean
+- function
+- object
+
+################################  Aula 06  ################################
+
+Array (vetor)
+Array multidimensional (matriz)
+ - É uma forma especial de trabalhar com variáveis
+ - Índice [0][1]...
+ - Na linguagem JS array é um objeto
+
+ATENÇÃO !!!
+Cuidado ao manipular os dados e alterar o índice do array
+Mais seguro:
+push() - Método usado para adicionar ao final do array
+pop() - excluir o último registro do array
+delete - excluir um dado sem alterar o índice
+
+Pecorrendo um array
+1) for forEach
+2) map() // percorre o array, faz algo e gera outro array com o resultado
+
+Um array também pode ser criado como um objeto
+
+let nome = []
+let nome = new Array()
+
+Um array pode ser criado como um estrtura de dados, junto com objetos e podem ser usados filtros para manipulação dos dados
+
+Atenção!
+Sempre criar uma cópia do array original para exibição antes de filtrar
+os dados
+________________________________________________________________________________________________________________________
+DOM - document object modelo
+É uma técnica para identificar elementos HTML (tags) que serão manipulados pelo CSS ou JS
+É uma forma de rtabalhar objetos com HTML
+A técnica consiste em atribuir um id ao elemento
+
+setTimeout(()=>{},1000) Usado para executar uma função a infinitamente a cada determinado tempo (milisegundos)
+
+O JS é capaz de adicionar ou remover uma classe CSS ao documento HTML usando o id do elemento
+________________________________________________________________________________________________________________________
+
+Plataforma node
+Observação: Ao clonar um repositório ou trabalhar em um outro PC, é necessário reinstalar as bibliotecas presentes nas
+depedências do package.json
+
+npm install (digitar na raiz do projeto)
+________________________________________________________________________________________________________________________
+Assincronismo:
+Métodos e funções que permitem ao Js trabalahar multitarefas
+- Banco de dados
+- Acesso a URLs (serviços de nuvem, web services, apis, etc)
+- Acesso ao disco(HD, SSD etc) do equipamento
+
+Promise ("promessa")
+1) A resposta a requisição pode ou não dar certo
+2) A resposta pode ter um atraso (tempo de retorn)
+sintaxe:
+return new Promise((resolve, reject) => {})
+//resolve - OK
+//reject - erro
+
+// Quando trabalhamos com promises, devemos usar a estrutura abaixo para obter o resultado do retorno da função
+.then(() => {})
+.catch(() => {})
+
+obs: é possivel usar mais de um .then para trabalhar diferentes tipos de resposta
+
+async - await
+(Forma mais moderna e simples de trabalhar assincronismo)
+
+Para trabalhar em async e await devemos usar funções, sendo que ao usar o async é obrigatório o uso do await
+Neste caso usamos dentro da função o try catch parar tratamento de exceções
+try {
+        
+} catch (error) {
+        
+}
+
+dica:
+\n (quebrar linha) "não é exibido"

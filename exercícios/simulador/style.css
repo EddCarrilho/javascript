@@ -1,0 +1,104 @@
+/** 
+folha de estilo - Simulador 
+@author Eduardo Carrilho
+*/
+
+
+/* layout */
+body {
+    background-color: #f0f0f5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.containerand {
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Header */
+
+header h1{
+    width: 100%;
+    color: #cc470d;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/** Menu **/
+nav {
+    width: 100%;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #e15a1f;
+    overflow: hidden; 
+    
+}
+
+nav ul li {
+    float: left;
+    
+}
+
+nav ul li a {
+    display: block;
+    
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+
+nav ul li a:hover {
+    background-color: #cc470d;
+    color: white;
+    transition: .5s;
+    text-decoration: underline;
+}
+
+/* Conteudo */
+
+#sw1 {
+    
+    float: left;
+}
+
+#sw2 {
+    
+    float: right;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: #e15a1f;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* Layout para telas grande */
+@media (min-width: 576px) {
+    header h1 {
+        text-align: left;
+    }
+
+    .containerand   {
+        text-align: left;
+    }
+
+    #sw2 {
+        float: left;
+    }
+}

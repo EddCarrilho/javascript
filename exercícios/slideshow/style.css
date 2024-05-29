@@ -1,0 +1,28 @@
+/**
+ *  Folha de Estilo - Slide Show
+ *  @author Eduardo Sewnarine Carrilho
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.Container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* Efeito fade */
+#slide.FadeOut {
+    opacity: 0.1;
+}
+
+#slide {
+    transition: opacity 2s; /*ajuste na transição fade*/
+    opacity: 1;
+}

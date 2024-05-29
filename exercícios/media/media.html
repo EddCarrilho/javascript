@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <h1>Calculadora de média</h1>
+        <form name="frmMedia">
+            <p><input type="number" placeholder = "Nota1" name="txtNota1" id="box" required></p>
+            <p><input type="number" placeholder = "Nota2" name="txtNota2" id="box" required></p>
+            <p><input type="number" placeholder = "Nota3" name="txtNota3" id="box" required></p>
+            <p><input type="number" placeholder = "Nota4" name="txtNota4" id="box" required></p>
+            input type="button" value="Calcular" id="botao" onclick="calcular()">
+            <input type="reset" value="Limpar" id="botao">
+            <p><input type="text" placeholder = "Média" name="txtMedia" id="box" disabled></p>
+            <p><input type="text" placeholder = "Status" name="txtStatus" id="box" disabled></p>
+        </form>
+    </div>
+    <!-- A tag script liga o documento ao JavaScript -->
+    <script src="media.js"></script>
+</body>
+</html>

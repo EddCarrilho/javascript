@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.Container {
+    text-align: center;
+}
+
+.Container img {
+    max-width: 100%;
+}
+
+.Container h1 {
+    color: #ADD8E6;
+}
+
+#box {
+    width: 100px;
+    border: 5px solid #ADD8E6;
+    padding: 5px;
+}
+
+#botao {
+    background-color: #ADD8E6;
+    border: 5px solid #ADD8E6;
+    border-radius: 25px;
+}

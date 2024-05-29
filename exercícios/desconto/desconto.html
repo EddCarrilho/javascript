@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto Vale Transporte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <h1>Desconto Vale Transporte</h1>
+        <form name="frmDesconto">
+            <p>Salário Bruto:</p>
+            <p><input type="number" placeholder = "0,00" name="txtSalario" id="box" required></p>
+            <p>Valor da Passagem:</p>
+            <p><input type="number" placeholder = "0,00" name="txtPassagem" id="box" required></p>
+            <p>Dias Úteis:</p>
+            <p><input type="number" placeholder = "0" name="txtDias" id="box" required></p>
+            <input type="button" value="Calcular" id="botao" onclick="calcular()">
+            <input type="reset" value="Limpar" id="botao">
+            <p>Valor do Desconto:</p>
+            <p><input type="text" placeholder = "" name="txtDesconto" id="box" disabled></p>
+            <p>Custo Mensal do transporte:</p>
+            <p><input type="text" placeholder = "" name="txtCusto" id="box" disabled></p>
+            <p>Vale a pena?</p>
+            <p><input type="text" placeholder = "" name="txtVAP" id="box" disabled></p>
+        </form>
+    </div>
+    <!-- A tag script liga o documento ao JavaScript -->
+    <script src="desconto.js"></script>
+</body>
+</html>

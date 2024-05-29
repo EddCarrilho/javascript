@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <h1>Cálculo IMC</h1>
+    <form name="frmIMC">
+        <p>Altura</p>
+        <p><input type="number" placeholder = "Metros" name="txtAltura" id="box" required></p>
+        <p>Peso</p>
+        <p><input type="number" placeholder = "Quilos" name="txtPeso" id="box" required></p>
+        <input type="button" value="Calcular" id="botao" onclick="calcular()">
+        <input type="reset" value="Limpar" id="botao">
+        <p>Seu IMC:</p>
+        <p><input type="text" placeholder = "Resultado" name="txtIMC" id="box" disabled></p>
+    </form>
+    <!-- A tag script liga o documento ao JavaScript -->
+    <script src="imc.js"></script>
+</body>
+</html>
