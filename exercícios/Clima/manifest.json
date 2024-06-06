@@ -1,0 +1,27 @@
+{
+  "name": "Previsão do Tempo",
+  "short_name": "PC&T",
+  "start_url": "/",
+  "display": "standalone",
+  "splash_screen": [
+    {
+    "full_screen": true,
+    "src": "splash.jpg",
+    "sizes": "1920x1200",
+    "type": "image/jpeg",
+    "aspect_ratio": "landscape"
+    }
+  ],
+  "icons": [
+    {
+      "src": "nuvem192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "nuvem512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

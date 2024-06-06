@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de FCM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel ="shortcut icon" href="cruz-vermelha512.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="Container">
+        <h1>Calculadora de Frequência Cardíaca Máxima - Faixa de Frequência Ideal para Treinamento</h1>
+        <form name="frmFCM">
+            <p>Sua Idade:</p>
+            <p><input type="number" placeholder = "Idade" name="txtIdade" id="box" required></p>
+            <input type="button" value="Calcular" id="botao" onclick="calcular()">
+            <p>(Fórmula Tanaka)</p>
+            <p>_________________________________________________</p>
+            <p>Frequência Máxima:</p>
+            <p><input type="text" placeholder = "Frequência" name="txtFreq" id="box" disabled></p>
+            <p>_________________________________________________</p>
+            <p>Frequência Ideal para Treino:</p>
+            <p><input type="text" placeholder = "Frequência Min" name="txtFreqMin" id="box" disabled>
+            <input type="text" placeholder = "Frequência Max" name="txtFreqMax" id="box" disabled></p>
+            <p>_________________________________________________</p>
+            <input type="reset" value="Limpar" id="botao">
+            <p>(Projeto a fins educacionais)</p>
+        </form>
+    </div>
+    <!-- A tag script liga o documento ao JavaScript -->
+    <script src="FCM.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then((registration) => {
+                    console.log('Service Worker registrado com escopo: ', registration.scope)
+                }).catch((error) => {
+                    console.log('Falha no registro do Service Worker: ', error)
+                })
+        }
+</script>
+</body>
+</html>
