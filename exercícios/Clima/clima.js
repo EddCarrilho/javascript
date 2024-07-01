@@ -1,6 +1,6 @@
 
 function clima() {
-    const key = '56d9afe18bea47feb638f299b4fe3409';
+    const key = 'e7beb02ef3094fc89c5ccde03a4bc548';
     const city = document.getElementById('city').value;
     const ApiUrl = `http://api.weatherbit.io/v2.0/current?city=${city}&key=${key}&include=minutely&lang=pt&units=M`;
 
