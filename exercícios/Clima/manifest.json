@@ -3,6 +3,9 @@
   "short_name": "PC&T",
   "start_url": "/",
   "display": "standalone",
+  "orientation": "portrait",
+  "scope": "fullscreen",
+  "lang": "pt-BR",
   "splash_screen": [
     {
     "full_screen": true,

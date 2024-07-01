@@ -22,6 +22,16 @@
             <p>WeatherBit</p>
         </div>
     </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(function(registration) {
+                    console.log('Service Worker registrado com escopo: ', registration.scope)
+                }).catch(function(error) {
+                    console.log('Falha no registro do Service Worker: ', error)
+                })
+        }
+    </script>
     <p id="erro"></p>
     <input type="reset" value="Limpar" id="botao2" onclick="Limpar()">
     <script src="clima.js"></script>
