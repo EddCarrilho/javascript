@@ -9,19 +9,21 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
+    <p id="bemvindo"></p>
     <div class="container">
         <h1>Previsão do Tempo</h1>
         <input type="text" id="city" placeholder="Digite o nome da cidade" required>
         <input type="button" value="Obter Resultado" id="botao" onclick="clima()">
         <div id="weather">
-            <p id="temperatura"></p>
-            <p id="descricao"></p>
-            <p id="humidade"></p>
+            <p id="temperatura">Temperatura:</p>
+            <p id="descricao">Condições:</p>
+            <p id="humidade">Umidade:</p>
+            <p>----------------------------------------------------------</p>
             <p>WeatherBit</p>
         </div>
     </div>
     <p id="erro"></p>
-    <input type="reset" value="Limpar" id="botao" onclick="Limpar()">
+    <input type="reset" value="Limpar" id="botao2" onclick="Limpar()">
     <script src="clima.js"></script>
 </body>
 </html>
