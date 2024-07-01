@@ -1,34 +1,18 @@
 // Nome do cache (controle de versão)
 const cachePWA = 'cache-v2';
+
 // Arquivos a serem armazenados em cache
-self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(cachePWA)
-      .then((cache) => {
-        return cache.addAll([
-          '/index.html',
-          '/style.css',
-          '/clima.js',
-          '/sw.js',
-          '/manifest.json',
-          '/nuvem192.png',
-          '/nuvem512.png',
-          '/splash.jpg'
-        ])
-      })
-    )
-  })
-//const urlsToCache = [
-//  '/',
-// '/index.html',
-//  '/style.css',
-//  '/clima.js',
-//  '/sw.js',
-//  '/manifest.json',
-//  '/nuvem192.png',
-//  '/nuvem512.png',
-//  '/splash.jpg'
-//]
+const urlsToCache = [
+  '/',
+  '/index.html',
+  '/style.css',
+  '/clima.js',
+  '/sw.js',
+  '/manifest.json',
+  '/nuvem192.png',
+  '/nuvem512.png',
+  '/splash.jpg'
+]
 
 // Instalando o Service Worker e armazenando os arquivos no cache
 self.addEventListener('install', (event) => {
